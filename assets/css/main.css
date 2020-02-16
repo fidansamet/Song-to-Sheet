@@ -2989,6 +2989,8 @@ input, select, textarea {
 	background-color: #00cc99;
 	position: relative;
 	padding: 100px 20px;
+	cursor: pointer;
+	display: block;
 }
 
 .drag_drop_box.has-advanced-upload {
@@ -3087,14 +3089,11 @@ input, select, textarea {
 	z-index: -1;
 }
 
-.js .box__file + label {
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	cursor: pointer;
-	overflow: hidden;
+.drag_drop_box_text {
 	text-align: center;
-	margin: 0 0 0;
 	color: #ffffff;
+	font-weight: 700;
+	cursor: pointer;
 }
 
 .js .box__file + label:hover strong,
@@ -3123,7 +3122,7 @@ input, select, textarea {
 
 .box__button {
 	font-weight: 700;
-	color: #e5edf1;
+	color: #c8dadf;
 	background-color: #00cc99;
 	display: none;
 	padding: 8px 16px;
