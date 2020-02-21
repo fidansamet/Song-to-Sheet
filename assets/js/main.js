@@ -216,3 +216,22 @@
 		});
 	});
 }(document, window, 0));
+
+var upButton = document.getElementById("upBtn");
+
+// when user scrolls down 20px from the top of the document show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		upButton.style.display = "block";
+	} else {
+		upButton.style.display = "none";
+	}
+}
+
+// when user clicks on the button scroll to the top of the document
+function goTopFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}

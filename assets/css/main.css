@@ -3133,3 +3133,26 @@ input, select, textarea {
 .box__button:focus {
 	background-color: #00bc99;
 }
+
+#upBtn {
+	background-color: white;
+	border: 0.4px solid black;
+	color: black;
+	display: none;
+	font-size: 12px;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 1;
+	cursor: pointer;
+	border-radius: 50%;
+	min-width: 0;
+	letter-spacing: 0;
+	padding: 0 20px 0;
+}
+
+#upBtn:hover {
+	background-color: #00bc99;
+	border-color: #00bc99;
+	color: white;
+}
